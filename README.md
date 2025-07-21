@@ -61,7 +61,7 @@ produces
 
 ---
 
-##❗️❗️ Advantages of Fibonacci Search Over Binary Search
+##❗️Advantages of Fibonacci Search Over Binary Search
 
 ### 1. Fewer Costly Division Operations
 - **Binary Search** uses division:  
