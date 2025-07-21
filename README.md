@@ -49,7 +49,9 @@ produces
 - **Final Check**: If one element remains, compare it directly  
 ## Running Time
 -Best Case: O(1) – if the target is found in the first comparison
+
 -Average and Worst Case: O(log n) – similar to Binary Search
+
 -The number of comparisons is determined by the Fibonacci series rather than powers of 2
 
 ## Memory Management
