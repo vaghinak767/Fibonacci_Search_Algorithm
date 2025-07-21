@@ -57,3 +57,47 @@ produces
 ## Memory Management
 - Dynamic memory is allocated for the input array using `new[]`  
 - Memory is properly deallocated at the end using `delete[]`
+
+
+---
+
+## 🔍 Advantages of Fibonacci Search Over Binary Search
+
+### 1. Fewer Costly Division Operations
+- **Binary Search** uses division:  
+  `mid = (low + high) / 2`
+- **Fibonacci Search** avoids division entirely, relying instead on addition and subtraction using precomputed Fibonacci numbers.
+- This can be faster on **older or embedded hardware** where division is expensive.
+
+### 2. Better Performance with Sequential Memory Access
+- Accesses elements **closer together in memory**, especially in early stages.
+- More **cache-friendly** and efficient on systems with **slow RAM** or **disk-backed arrays**.
+
+### 3. Optimized for Unmodifiable or Read-Only Data
+- Ideal for **read-only structures** like **ROMs** where data cannot be modified for optimization (e.g., sorting or rearranging).
+
+### 4. Efficient for Systems with Expensive Seek Times
+- Predictable, local access patterns make it efficient on:
+  - **Tape drives**
+  - **Block devices**
+- Reduces **random access** and **seek times**, unlike Binary Search.
+
+---
+
+## When Is Fibonacci Search Better Than Binary Search?
+- On **low-level or embedded systems**
+- With **large datasets on slow media**
+- When **division operations** are costly
+- When **cache performance** is a concern
+
+---
+
+## Downsides Compared to Binary Search
+- **Slightly more complex** to implement
+- Requires a **sorted array**
+- **Little benefit** on modern general-purpose CPUs
+
+---
+
+> This algorithm is most useful in specific environments where hardware constraints or memory behavior make traditional binary search less efficient.
+
