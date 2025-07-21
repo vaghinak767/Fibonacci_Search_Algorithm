@@ -1,6 +1,6 @@
 # Fibonacci Search Algorithm
 
-## Description
+##  🔍Description
 This C++ program implements the **Fibonacci Search algorithm** to find the position of a target element in a sorted array. It uses Fibonacci numbers to divide the array into sections, providing a comparison-efficient alternative to binary search in certain cases.
 
 ## Files
@@ -61,7 +61,7 @@ produces
 
 ---
 
-## 🔍 Advantages of Fibonacci Search Over Binary Search
+##❗️❗️ Advantages of Fibonacci Search Over Binary Search
 
 ### 1. Fewer Costly Division Operations
 - **Binary Search** uses division:  
